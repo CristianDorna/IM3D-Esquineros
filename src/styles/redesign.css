@@ -102,28 +102,18 @@ body::before {
 
 .brand {
   display: inline-flex;
-  width: 86px;
-  flex-direction: column;
-  align-items: flex-start;
-  line-height: 1;
+  width: 112px;
+  height: 58px;
+  flex: 0 0 auto;
+  align-items: center;
+  overflow: hidden;
 }
 
-.brand-mark {
-  font-family: var(--font-display);
-  font-size: 1.7rem;
-  font-weight: 800;
-  letter-spacing: -0.1em;
-}
-
-.brand-mark span {
-  color: #85867f;
-}
-
-.brand-caption {
-  margin-top: 4px;
-  font-size: 0.42rem;
-  font-weight: 700;
-  letter-spacing: 0.23em;
+.brand img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .main-nav {
@@ -167,18 +157,6 @@ body::before {
   color: white;
   font-size: 0.67rem;
   font-weight: 700;
-}
-
-.brand-mark {
-  color: #232421;
-}
-
-.brand-mark span {
-  color: #85867f;
-}
-
-.brand-caption {
-  color: #777972;
 }
 
 .main-nav {
@@ -900,6 +878,38 @@ body::before {
   font-weight: 700;
 }
 
+.floating-whatsapp {
+  position: fixed;
+  z-index: 40;
+  right: 24px;
+  bottom: 24px;
+  display: grid;
+  width: 60px;
+  height: 60px;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.58);
+  border-radius: 50%;
+  background: #25d366;
+  color: white;
+  box-shadow: 0 8px 24px rgba(20, 32, 24, 0.25);
+  transition: background-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.floating-whatsapp:hover {
+  background: #1fb95a;
+  box-shadow: 0 12px 30px rgba(20, 32, 24, 0.32);
+  transform: translateY(-3px) scale(1.04);
+}
+
+.floating-whatsapp svg {
+  width: 29px;
+  height: 29px;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.5;
+}
+
 .site-footer {
   background: rgba(245, 244, 238, 0.96);
 }
@@ -992,15 +1002,8 @@ body::before {
   }
 
   .brand {
-    width: 75px;
-  }
-
-  .brand-caption {
-    font-size: 0.39rem;
-  }
-
-  .brand-mark {
-    font-size: 1.5rem;
+    width: 91px;
+    height: 48px;
   }
 
   .cart-button {
@@ -1179,5 +1182,12 @@ body::before {
 
   .add-button {
     width: 100%;
+  }
+
+  .floating-whatsapp {
+    right: 16px;
+    bottom: 16px;
+    width: 54px;
+    height: 54px;
   }
 }

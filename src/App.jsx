@@ -3,6 +3,7 @@ import CartDrawer from "./components/CartDrawer.jsx";
 import ContactSection from "./components/ContactSection.jsx";
 import FAQSection from "./components/FAQSection.jsx";
 import Footer from "./components/Footer.jsx";
+import FloatingWhatsApp from "./components/FloatingWhatsApp.jsx";
 import Header from "./components/Header.jsx";
 import Hero from "./components/Hero.jsx";
 import IdeasSection from "./components/IdeasSection.jsx";
@@ -73,6 +74,7 @@ export default function App() {
         <ContactSection cartItems={cartItems} products={products} />
       </main>
       <Footer />
+      <FloatingWhatsApp whatsappNumber={store.whatsappNumber} />
       <CartDrawer
         items={cartItems}
         isOpen={isCartOpen}
