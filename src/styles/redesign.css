@@ -902,12 +902,12 @@ body::before {
 }
 
 .floating-whatsapp svg {
-  width: 29px;
-  height: 29px;
+  width: 37px;
+  height: 37px;
   stroke: currentColor;
   stroke-linecap: round;
   stroke-linejoin: round;
-  stroke-width: 1.5;
+  stroke-width: 1.8;
 }
 
 .site-footer {
