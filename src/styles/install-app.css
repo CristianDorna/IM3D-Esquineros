@@ -1,0 +1,139 @@
+.install-app-button {
+  display: inline-flex;
+  min-height: 42px;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border: 1px solid #d4d4cd;
+  border-radius: 999px;
+  padding: 0 13px;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: 600;
+  transition: border-color 160ms ease, background 160ms ease;
+}
+
+.install-app-button:hover {
+  border-color: #74756e;
+  background: #fffefa;
+}
+
+.install-app-button:disabled {
+  cursor: default;
+}
+
+.install-app-button svg {
+  width: 17px;
+  height: 17px;
+  flex: 0 0 auto;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.7;
+}
+
+.install-app-label-compact {
+  display: none;
+}
+
+.install-help-dialog {
+  width: min(440px, calc(100vw - 32px));
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 26px;
+  background: var(--paper);
+  color: var(--ink);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.22);
+}
+
+.install-help-dialog::backdrop {
+  background: rgba(25, 27, 25, 0.56);
+  backdrop-filter: blur(3px);
+}
+
+.install-help-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.install-help-eyebrow {
+  margin: 0 0 8px;
+  color: var(--muted);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.install-help-dialog h2 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+}
+
+.install-help-dialog > p {
+  margin: 18px 0 10px;
+  color: #565853;
+  line-height: 1.6;
+}
+
+.install-help-dialog ol {
+  display: grid;
+  gap: 9px;
+  margin: 12px 0 0;
+  padding-left: 22px;
+  color: #565853;
+  line-height: 1.55;
+}
+
+.install-help-close {
+  display: grid;
+  width: 36px;
+  height: 36px;
+  flex: 0 0 auto;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--white);
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 760px) {
+  .install-app-button {
+    min-height: 38px;
+    gap: 5px;
+    padding-inline: 9px;
+    font-size: 0.68rem;
+  }
+}
+
+@media (max-width: 340px) {
+  .brand {
+    width: 72px;
+  }
+
+  .install-app-button {
+    gap: 4px;
+    padding-inline: 8px;
+    font-size: 0.64rem;
+  }
+
+  .install-app-label-wide,
+  .cart-label {
+    display: none;
+  }
+
+  .install-app-label-compact {
+    display: inline;
+  }
+
+  .cart-button {
+    gap: 6px;
+    padding-inline: 8px;
+  }
+}

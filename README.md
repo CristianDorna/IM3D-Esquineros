@@ -40,6 +40,13 @@ El flujo de trabajo configura automáticamente la ruta base para repositorios de
 proyecto y para sitios de usuario u organización (`*.github.io`). En local, el
 sitio sigue usando la ruta raíz.
 
+## Instalar como aplicación
+
+La página se puede instalar desde Chrome o Edge en PC y Android con el botón
+**Instalar app**. En iPhone o iPad, abrí el sitio en Safari, tocá **Compartir**
+y elegí **Añadir a pantalla de inicio**. La instalación requiere acceder al
+sitio publicado mediante HTTPS.
+
 ## Personalización
 
 - Editá los productos y opciones en `src/data/products.js`.

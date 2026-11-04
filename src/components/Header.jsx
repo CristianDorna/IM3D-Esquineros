@@ -1,4 +1,5 @@
 import Brand from "./Brand.jsx";
+import InstallAppButton from "./InstallAppButton.jsx";
 
 export default function Header({ cartCount, onOpenCart }) {
   return (
@@ -10,9 +11,15 @@ export default function Header({ cartCount, onOpenCart }) {
           <a href="#ideas">Ideas</a>
           <a href="#preguntas">Preguntas</a>
         </nav>
-        <button className="cart-button" type="button" onClick={onOpenCart}>
+        <InstallAppButton />
+        <button
+          className="cart-button"
+          type="button"
+          onClick={onOpenCart}
+          aria-label={`Mi pedido: ${cartCount} productos`}
+        >
           <CartIcon />
-          <span>Mi pedido</span>
+          <span className="cart-label">Mi pedido</span>
           <span className="cart-count" aria-label={`${cartCount} productos`}>
             {cartCount}
           </span>
