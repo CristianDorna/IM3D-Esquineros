@@ -1,0 +1,249 @@
+.announcement {
+  display: flex;
+  min-height: 32px;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background: var(--blue);
+  color: #fff;
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.announcement-divider {
+  color: #b7c8ff;
+  font-size: 0.8rem;
+}
+
+.site-header {
+  position: sticky;
+  z-index: 20;
+  top: 0;
+  border-bottom: 1px solid rgba(32, 35, 43, 0.07);
+  background: rgba(248, 247, 243, 0.94);
+  backdrop-filter: blur(14px);
+}
+
+.header-inner {
+  display: flex;
+  width: min(var(--page-width), calc(100% - 96px));
+  height: 78px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.brand {
+  display: inline-flex;
+  width: 86px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+  line-height: 1;
+}
+
+.brand-mark {
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: 1.7rem;
+  font-weight: 800;
+  letter-spacing: -0.1em;
+}
+
+.brand-mark span {
+  color: var(--blue);
+}
+
+.brand-caption {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 0.42rem;
+  font-weight: 700;
+  letter-spacing: 0.23em;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  color: #60636a;
+  font-size: 0.79rem;
+  font-weight: 500;
+}
+
+.main-nav a,
+.footer-inner > a:last-child {
+  transition: color 160ms ease;
+}
+
+.main-nav a:hover,
+.footer-inner > a:last-child:hover {
+  color: var(--blue);
+}
+
+.cart-button {
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  gap: 9px;
+  border: 1px solid #dcdad4;
+  border-radius: 5px;
+  padding: 0 10px 0 13px;
+  background: transparent;
+  cursor: pointer;
+  font-size: 0.78rem;
+  font-weight: 600;
+  transition: border-color 160ms ease, background 160ms ease;
+}
+
+.cart-button:hover {
+  border-color: var(--ink);
+  background: #fff;
+}
+
+.cart-button > svg {
+  width: 18px;
+  height: 18px;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.5;
+}
+
+.cart-count {
+  display: grid;
+  width: 22px;
+  height: 22px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--blue);
+  color: white;
+  font-size: 0.67rem;
+  font-weight: 700;
+}
+
+.value-strip {
+  overflow: hidden;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: #f1f0eb;
+}
+
+.value-strip-inner {
+  display: flex;
+  min-height: 66px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  color: #575a61;
+  font-size: 0.69rem;
+  font-weight: 600;
+  letter-spacing: 0.015em;
+}
+
+.value-star {
+  color: var(--orange);
+  font-size: 1rem;
+}
+
+.site-footer {
+  background: #fffefa;
+}
+
+.footer-inner {
+  display: flex;
+  min-height: 92px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  border-top: 1px solid var(--line);
+}
+
+.footer-inner > p,
+.footer-inner > a:last-child {
+  color: #777a81;
+  font-size: 0.73rem;
+}
+
+.footer-inner > p span {
+  margin-left: 8px;
+  color: #a0a1a5;
+}
+
+.footer-inner > a:last-child span {
+  color: var(--blue);
+}
+
+@media (max-width: 760px) {
+  .announcement {
+    min-height: 30px;
+    gap: 9px;
+    font-size: 0.49rem;
+  }
+
+  .header-inner {
+    width: calc(100% - 40px);
+    height: 66px;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .brand {
+    width: 75px;
+  }
+
+  .brand-mark {
+    font-size: 1.5rem;
+  }
+
+  .cart-button {
+    min-height: 38px;
+    gap: 7px;
+    padding-inline: 9px;
+    font-size: 0.71rem;
+  }
+
+  .value-strip-inner {
+    min-height: 58px;
+    justify-content: center;
+    gap: 11px;
+    font-size: 0.57rem;
+    white-space: nowrap;
+  }
+
+  .value-strip-inner > :nth-child(n + 5) {
+    display: none;
+  }
+
+  .footer-inner {
+    min-height: 112px;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    padding-block: 18px;
+  }
+
+  .footer-inner > p {
+    order: 1;
+    width: 100%;
+    margin: 0;
+    font-size: 0.66rem;
+  }
+
+  .footer-inner > a:last-child {
+    font-size: 0.68rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .announcement {
+    font-size: 0.44rem;
+  }
+
+  .value-strip-inner {
+    gap: 8px;
+    font-size: 0.53rem;
+  }
+}
