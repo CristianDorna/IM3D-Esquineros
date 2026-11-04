@@ -224,10 +224,8 @@
 .button-whatsapp svg {
   width: 19px;
   height: 19px;
-  stroke: currentColor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 1.5;
+  fill: currentColor;
+  stroke: none;
 }
 
 .cart-note {
