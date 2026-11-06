@@ -1,4 +1,4 @@
-import blackCorner from "../../IMG/hero-esquinero.png";
+import blackCorner from "../../IMG/img2.jpeg";
 import whiteCorners from "../../IMG/img3.jpeg";
 import blackCornersInUse from "../../IMG/img1.jpeg";
 import cubeBuild from "../../IMG/img7.jpeg";
