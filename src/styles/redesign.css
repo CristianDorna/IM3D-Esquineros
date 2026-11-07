@@ -86,6 +86,9 @@ body::before {
 }
 
 .site-header {
+  position: sticky;
+  z-index: 20;
+  top: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.18);
   background: rgba(244, 243, 237, 0.92);
   backdrop-filter: blur(18px);
