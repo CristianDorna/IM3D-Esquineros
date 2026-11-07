@@ -19,9 +19,9 @@ export default function Hero() {
           <a className="button button-dark" href="#producto">
             Explorar catálogo <ArrowIcon />
           </a>
-          <a className="text-link" href="#como-funciona">
+         {/*  <a className="text-link" href="#como-funciona">
             Ver ideas
-          </a>
+          </a> */}
         </div>
         <div className="hero-note">
           <span className="hero-note-mark" aria-hidden="true">IM3D</span>
