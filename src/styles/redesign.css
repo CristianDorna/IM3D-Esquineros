@@ -305,7 +305,7 @@ body::before {
   align-items: center;
   gap: 20px;
   color: rgba(255, 255, 255, 0.72);
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .hero-note-mark {
