@@ -25,7 +25,7 @@ export default function Hero() {
         </div>
         <div className="hero-note">
           {/* <span className="hero-note-mark" aria-hidden="true">IM3D</span> */}
-          <span>Diseñados para jugar, aprender y construir</span>
+          <span>Diseñados para jugar,<br /> aprender y construir</span>
         </div>
       </div>
       {/* <a className="hero-scroll" href="#producto" aria-label="Desplazarse al catálogo">
