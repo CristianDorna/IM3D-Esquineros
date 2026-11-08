@@ -24,14 +24,14 @@ export default function Hero() {
           </a> */}
         </div>
         <div className="hero-note">
-          <span className="hero-note-mark" aria-hidden="true">IM3D</span>
+          {/* <span className="hero-note-mark" aria-hidden="true">IM3D</span> */}
           <span>Diseñados para jugar, aprender y construir</span>
         </div>
       </div>
-      <a className="hero-scroll" href="#producto" aria-label="Desplazarse al catálogo">
+      {/* <a className="hero-scroll" href="#producto" aria-label="Desplazarse al catálogo">
         <span aria-hidden="true">↓</span>
         DESCUBRÍ IM3D
-      </a>
+      </a> */}
     </section>
   );
 }
